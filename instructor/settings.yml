@@ -1,6 +1,6 @@
 # Key settings (must edit)
-project_title: Choochoo template repository
-project_repo: lucydot/ChooChoo-template
+project_title: Python programming at Northumbria
+project_repo: lucydot/Python-Northumbria-2023
 admins:
 - lucydot
 - choochoo-bot
@@ -9,7 +9,7 @@ instructors:
 students:
 - lucydot
 - choochoo-bot
-web_address: https://lucydot.github.io/ChooChoo-template
+web_address: https://lucydot.github.io/Python-Northumbria-2023
 
 # User options (may edit)
 questions: true
