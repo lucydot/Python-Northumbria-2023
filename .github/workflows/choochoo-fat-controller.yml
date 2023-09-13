@@ -16,7 +16,7 @@ jobs:
   check_question_ticket:
     if: github.event.label.name == 'question proposal' || github.event.label.name == 'student' 
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: write-all
     env: 
       ISSUE_NUMBER: ${{ github.event.issue.number }}
       GITHUB_REPOSITORY: ${{ github.repository }}
@@ -32,7 +32,7 @@ jobs:
   check_instructor_ticket:
     if: github.event.label.name == 'instructor' 
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: write-all
     env: 
       ISSUE_NUMBER: ${{ github.event.issue.number }}
       GITHUB_REPOSITORY: ${{ github.repository }}
@@ -52,7 +52,7 @@ jobs:
       startsWith(github.event.comment.body,'choochoo ') &&
       !contains( github.event.issue.labels.*.name, 'question proposal') 
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: write-all
     steps:
     - uses: ben-z/actions-comment-on-issue@1.0.2
       with:
@@ -69,7 +69,7 @@ jobs:
       !contains( github.event.issue.labels.*.name, 'accepted question') &&
       startsWith(github.event.comment.body,'choochoo ')
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: write-all
     steps:
     - uses: ben-z/actions-comment-on-issue@1.0.2
       with:
@@ -86,7 +86,7 @@ jobs:
       ) &&
       startsWith(github.event.comment.body,'choochoo ')
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: write-all
     env: 
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ISSUE_NUMBER: ${{ github.event.issue.number }}
@@ -114,7 +114,7 @@ jobs:
         contains( github.event.issue.labels.*.name, 'accepted question')  ) &&
        startsWith(github.event.comment.body,'choochoo ') 
     runs-on: ubuntu-latest
-    permissions: write
+    permissions: write-all
     env: 
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ISSUE_NUMBER: ${{ github.event.issue.number }}
