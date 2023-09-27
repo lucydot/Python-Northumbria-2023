@@ -1,21 +1,20 @@
 # Key settings (must edit)
-project_title: Python programming at Northumbria
+project_title: Python Checklist 2023
 project_repo: lucydot/Python-Northumbria-2023
 admins:
 - lucydot
-- choochoo-bot
 instructors:
 - lucydot
+- r-pallister
+
 students:
 - lucydot
-- choochoo-bot
+- r-pallister
+
 web_address: https://lucydot.github.io/Python-Northumbria-2023
 
 # User options (may edit)
 questions: true
-votes_required: 3
+votes_required: 4
 gh-pages: true
 gh-pages_branch: gh-pages
-
-
-
