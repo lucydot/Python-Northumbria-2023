@@ -1,7 +1,7 @@
 name: Fat Controller
 
 permissions:
-  contents: write
+  contents: write-all
 
 on: 
   workflow_dispatch:
