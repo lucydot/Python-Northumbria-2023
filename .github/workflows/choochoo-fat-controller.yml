@@ -1,7 +1,7 @@
 name: Fat Controller
 
 permissions:
-  contents: write-all
+  contents: write
 
 on: 
   workflow_dispatch:
@@ -85,6 +85,7 @@ jobs:
       ) &&
       startsWith(github.event.comment.body,'choochoo ')
     runs-on: ubuntu-latest
+    permissions: write-all
     env: 
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ISSUE_NUMBER: ${{ github.event.issue.number }}
